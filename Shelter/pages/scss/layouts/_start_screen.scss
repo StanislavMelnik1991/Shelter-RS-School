@@ -1,0 +1,99 @@
+.background_gradient{
+    
+    margin-top: -147px;
+    //width: 100%;
+    padding-top: 180px;
+    background: url(../../assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, $color-gradient-light-brown 0%, $color-gradient-dark-brown 100%);
+    //z-index: -1;
+    display: flex;
+    @media screen and (max-width: $monitor) {
+        padding-top: 181px;
+    }
+    
+}
+.start_screen_content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    img{
+        padding-left: 42px;
+    }
+        @media screen and (max-width: $monitor) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                div{
+                    padding-top: 0px;
+                    padding-bottom: 100px;
+                    button{
+                        margin: auto;
+                    }
+                }
+            img{
+                width: 569px;
+                height: 593px;
+                padding-left: 139px;
+                
+            }
+        }
+        @media screen and (max-width: $tablet) {
+            div{
+            button{
+                margin-left: 46px;
+            }}
+            img{
+                width: 260px;
+                height: 271.77px;
+                padding-left: 39px;
+                padding-top: 5px;
+            }
+        }
+}
+.start_screen_text{
+    padding-top: 163px;
+
+    width: 100%;
+    max-width: 460px;
+        h2{
+            width: 100%;
+            max-width: 310px;
+            display: flex;
+            /* color-light-xl */
+            color: $color-light-xl;
+        }
+        p{
+            margin-top: 42px;
+            margin-bottom: 41px;
+            /* or 24px */
+            display: flex;
+            align-items: center;
+            /* color-dark-s */
+            color: $color-dark-s;
+            @media screen and (max-width: $monitor) {
+                margin-bottom: 42px;
+            }
+        }
+        @media screen and (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+            h2{
+                font-size: 25px;
+                text-align: center;
+                max-width: 230px;
+                letter-spacing: 0.06em;
+            }
+            p{
+                margin-top: 42px;
+                align-items: center;
+                text-align: center;
+                max-width: 300px;
+                letter-spacing: 0.0001em;
+            }
+        }
+}
+
+

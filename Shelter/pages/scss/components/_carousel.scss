@@ -1,0 +1,49 @@
+.carousel_cards{
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 990px;
+    margin: 0 auto;
+    gap: 53px;
+    //padding-bottom: 30px;
+    .pets_slider_content:nth-child(n){
+        position: relative;
+        
+    }
+    @media screen and (max-width: $monitor) {
+        max-width: 580px;
+    }
+
+}
+.transitionLeft{
+    .pets_slider_content:nth-child(n){    
+        animation-name: moveLeft;
+        
+        animation-duration: 1s;
+        
+    }
+}
+.transitionRight{
+    .pets_slider_content:nth-child(n){    
+        animation-name: moveRight;
+        animation-duration: 1s;
+    }
+}
+@keyframes moveRight{
+    from{
+        left: calc(0% + (100% + 50px));
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes moveLeft{
+    from{
+        left: calc(0% - (100% + 50px));
+    }
+    to{
+        left: 0%;
+    }
+}

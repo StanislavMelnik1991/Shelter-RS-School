@@ -1,0 +1,108 @@
+.button_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+     /* color-primary */
+    background: $color-primary;
+    border: 0ch;
+    border-radius: 100px;
+    color: $color-dark-3xl;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    /* identical to box height, or 22px */
+    cursor: pointer;
+    letter-spacing: 0.06em;
+        &:hover{
+            background-color: $color-primary-light;
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -o-transition: 0.4s;
+            transition: 0.4s;
+        }
+};
+
+.button_primary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 43px;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    background-color: $color-light-s;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    /* identical to box height, or 22px */
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    &:hover{
+        background-color: $color-primary-light;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        border-color: $color-primary-light;
+    }
+}
+.button_arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //padding: 23px 19px;
+    width: 100%;
+    width: 52px;
+    height: 52px;
+    /* color-primary */
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: $color-light-l;
+    cursor: pointer;
+        svg{
+            fill: $color-dark-3xl;
+        }
+    &:disabled{
+        border: 2px solid $color-dark-s;
+        cursor: auto;
+        svg{
+            fill: $color-dark-s;
+            
+        }
+        &:hover{
+            background-color: $color-light-l;
+            border: 2px solid $color-dark-s;
+            color: $color-dark-s;
+        }
+    }
+    &:hover{
+        background-color: $color-primary-light;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        border-color: $color-primary-light;
+    }
+    @media screen and (max-width: $tablet) {
+        margin-top: 20px;
+    }
+}
+#burgerMenu:checked ~ .menu_nav{
+    visibility: visible;
+    transition: 0.5s;
+    right: 0;
+  }
+  

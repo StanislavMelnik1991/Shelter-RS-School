@@ -1,0 +1,99 @@
+.help_wrapper{
+    padding-top: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+    h3{
+        display: flex;
+        width: 100%;
+        max-width: 310px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1px 0px 0px 1px;
+        @media screen and (max-width: $tablet) {
+            font-size: 25px;
+            max-width: 225px;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+.help_list{
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 58px;
+    @media screen and (max-width: $monitor) {
+        width: 100%;
+        max-width: 690px;
+   }
+   @media screen and (max-width: $tablet) {
+        display: flex;
+        max-width: 320px;
+        justify-content: center;
+        padding-top: 42px;
+        .help_view:nth-child(9){
+            padding-right: 174px;
+         }
+   }
+}
+
+.help_view{
+    padding: 0px 60px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    svg{
+        path{
+            fill: $color-primary;
+        }
+    }
+    p{
+        padding-top: 30px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        /* identical to box height, or 23px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    @media screen and (max-width: $monitor) {
+        width: 100%;
+        max-width: 170px;
+        padding: 0px 30px 55px;
+    }
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+        max-width: 130px;
+        padding: 0px 15px 31px;
+
+        svg{
+            width: 50px;
+            height: 50px;
+        }
+        p{
+            padding-top: 20px;
+            font-size: 15px;
+            line-height: 110%;
+            
+        }
+    }
+}

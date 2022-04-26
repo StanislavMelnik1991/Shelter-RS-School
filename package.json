@@ -1,0 +1,23 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "Private repository for @stanislavmelnik1991",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch shelter/pages/scss/style.scss shelter/pages/scss/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/stanislavmelnik1991-JSFE2022Q1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/stanislavmelnik1991-JSFE2022Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/stanislavmelnik1991-JSFE2022Q1#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

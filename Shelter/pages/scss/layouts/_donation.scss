@@ -1,0 +1,126 @@
+.donation_wrapper{
+    padding-top: 82px;
+    background: $color-light-l;
+    display: flex;
+    padding-bottom: 100px;
+    @media screen and (max-width: $monitor) {
+        padding-bottom: 100px;
+        padding-top: 83px;
+    }
+    @media screen and (max-width: $tablet) {
+        padding-top: 43px;
+        padding-bottom: 42px;
+    }
+}
+
+.donation_content{
+    
+    width: 100%;
+    max-width: 915px;
+    margin: 0 auto;
+    margin-top: -1px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+        img{
+            margin: 10px 0px 0px 0px;
+        }
+    @media screen and (max-width: $monitor) {
+        flex-direction: column-reverse;
+        align-items: center;
+        img{
+            padding-top: 50px;
+            margin: 10px 1px 0px 0px;
+        }
+        
+    }
+    @media screen and (max-width: $tablet) {
+        img{
+            width: 262px;
+            height: 135px;
+            padding-top: 32px;
+        }
+    }
+}
+
+
+.donation_content_text{ 
+    width: 100%;
+    max-width: 380px;
+    flex-direction: column;
+    padding-left: 0px;
+    //padding-top: 2px;
+    display: flex;
+    margin-left: -1px;
+    h3{
+        padding: 0px 0px 19px 0px;
+        //padding-bottom: 19px;
+        //padding-top: 2px;
+    }
+    h5{
+        padding-bottom: 19px;
+    }
+    p{
+        font-style: italic;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-dark-m;
+        padding-top: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+        max-width: 279px;
+        align-items: center;
+        h3{
+            font-size: 25px;
+            align-items: center;
+            text-align: center;
+        }
+        h5{
+            letter-spacing: 0;
+            line-height: 160%;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 12px;
+            align-items: center;
+            text-align: justify;
+        }
+    }
+}
+.donation_bank_contacts{
+    width: 100%;
+    max-width: 321px;
+    display: flex;
+    background: $color-primary;
+    border-radius: 9px;
+    padding: 10px 15px;
+        &:hover{
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -o-transition: 0.4s;
+            transition: 0.4s;
+            background: $color-primary-light;
+        }
+    cursor: pointer;
+        h4{
+            padding-left: 16px;
+           
+        }
+        svg{
+            fill: $color-dark-3xl
+        }
+    @media screen and (max-width: $tablet) {
+        max-width: 254px;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        justify-content: space-between;
+        margin-left: -15px;
+        h4{
+            font-size: 15px;
+            padding: 0px;
+        }
+    }
+}

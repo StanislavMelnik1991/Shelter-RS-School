@@ -1,0 +1,33 @@
+//abstracts
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/variables";
+@import "abstracts/scrollBar";
+
+//base
+@import "base/typography";
+@import "base/fonts";
+
+//components
+@import "components/burger";
+@import "components/buttons";
+@import "components/carousel";
+
+//layouts
+@import "layouts/general";
+@import "layouts/header";
+@import "layouts/our_pets";
+@import "layouts/start_screen";
+@import "layouts/about";
+@import "layouts/pets";
+@import "layouts/help";
+@import "layouts/donation";
+@import "layouts/footer";
+
+//pages
+@import "pages/modalWindow";
+@import "pages/our_pets";
+
+//vendors
+@import "vendors/normalize";

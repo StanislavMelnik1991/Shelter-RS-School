@@ -1,0 +1,183 @@
+.pets_wrapper{
+    padding-top: 80px;
+    background: $color-light-l;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: $tablet) {
+        padding-top: 42px;
+    }
+}
+.pets_content{  
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    h3{
+        width: 100%;
+        max-width: 400px;
+        color: $color-dark-l;
+        text-align: center;
+        padding-left: 1px;
+        @media screen and (max-width: $tablet) {
+            font-size: 25px;
+            letter-spacing: 0.06em;
+            max-width: 300px;
+        }
+    }
+    @media screen and (max-width: $monitor) {
+        max-width: 708px; 
+        padding-bottom: 100px;
+    }
+    @media screen and (max-width: $tablet) {
+        padding-bottom: 42px;
+        max-width: 300px;
+    }
+    
+}
+
+.pets_p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+/* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.pets_slider{
+    padding-top: 59px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; 
+     
+    @media screen and (max-width: $tablet) {
+        max-width: 270px;
+        padding-top: 41px;
+        padding-bottom: 42px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        .button_arrow:nth-child(3){
+            //display: none;
+            order: 3;
+         }
+         .button_arrow:nth-child(-n+1){
+            //display: none;
+            order: 1;
+         }
+    }
+    
+}
+
+.pets_slider_content{
+    
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    gap: 90px;
+    @media screen and (max-width: $monitor) {
+        width: 100%;
+        max-width: 580px;
+        gap: 40px;
+        justify-content:space-between;
+        .pets_card:nth-child(3){
+           display: none;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        width: auto;
+        .pets_card:nth-child(2){
+            display: none;
+         }
+    }
+}
+.pets_card{
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 405px;
+    //margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-radius: 9px;
+    background-color: $color-light-s;
+    
+        &:hover{
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -o-transition: 0.4s;
+            transition: 0.4s;
+            cursor: pointer;
+            box-shadow: 0px 2px 35px 14px $color-card-hover;
+            background-color: $color-light-xl;
+            button{
+                background-color: $color-primary;
+                -webkit-transition: 0.4s;
+                -moz-transition: 0.4s;
+                -o-transition: 0.4s;
+                transition: 0.4s;
+                border-color: $color-primary;
+                &:hover{
+                    background-color: $color-primary-light;
+                    -webkit-transition: 0.4s;
+                    -moz-transition: 0.4s;
+                    -o-transition: 0.4s;
+                    transition: 0.4s;
+                    border-color: $color-primary-light;
+                }
+            }
+
+        }
+        
+}
+
+.pets_current_link{
+    color: $color-dark-3xl;
+    border-bottom: 3px solid $color-primary;
+    }   
+
+.current_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //padding: 23px 19px;
+    width: 52px;
+    height: 52px;
+    /* color-primary */
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: $color-primary;
+
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+}

@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    }
+
+h2{
+    margin: 0;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: $color-dark-l;
+    }
+h3{
+    margin: 0;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    }
+h4{
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    }
+h5{
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
+    /* color-dark-l */
+    color: $color-dark-l;
+    }
+p{
+    margin: 0;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    /* identical to box height, or 24px */ 
+    /* color-dark-xl */
+    color: $color-dark-xl
+    }
+li {
+    list-style-type: none;
+        /* Убираем маркеры */
+        
+      }
+      
+ul {
+    margin-left: 0;
+
+    padding-left: 0;
+
+      }
+a{
+    text-decoration: none;
+    line-height: 50%;
+    letter-spacing: 0.00em;
+}
+    

@@ -1,0 +1,78 @@
+.about_wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+        img{
+            margin-right: 120px;
+        }
+        @media screen and (max-width: $monitor) {
+            margin-top: 81px;
+            flex-direction: column-reverse;
+            img{
+                margin: 0;
+            }
+            div{
+                padding-bottom: 80px;
+            }
+        }
+        @media screen and (max-width: $tablet) {
+            max-width: 300px;
+            margin-top: 42px;
+            margin-bottom: 42px;
+            div{
+                padding: 0px 0px 41px 0px;
+            }
+            img{
+                margin: 0;
+                width: 260px;
+                height: 353.6px;
+            }
+        }
+}
+.about_text{
+    display: flex;
+    width: 100%;
+    max-width: 430px;
+    flex-direction: column;
+    
+        h2{
+            padding-bottom: 23px;
+            width: 100%;
+            max-width: 370px;
+            display: flex;
+            align-items: center;
+            font-size: 35px;
+            letter-spacing: 0.06em
+        }
+        p{
+            color: $color-dark-xl;
+        }
+    @media screen and (max-width: $tablet) {
+        display: flex;
+        align-items: center;
+        h2{
+            padding-bottom: 24px;
+            max-width: 290px;
+            font-size: 25px;
+            align-items: center;
+            text-align: center;
+        }
+        p{
+            max-width: 270px;
+            align-items: center;
+            text-align: justify;
+        }
+    }
+}
+.about_text_p2{
+    padding-top: 25px;
+    @media screen and (max-width: $tablet) {
+        padding-top: 22px;  
+    }
+}
