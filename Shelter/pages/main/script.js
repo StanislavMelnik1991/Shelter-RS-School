@@ -1,6 +1,6 @@
 const CAROUSEL = document.getElementById('carousel')
 let counter = 0
-let carouselType = true
+let carouselType = true //changing the behavior of the carousel
 let allPets = []
 async function getPets() {  
     const petsData = '../../pets.json';
@@ -57,11 +57,11 @@ function activeCardEdit(cardPosition, petsOffset){
     }
 }
 function rndCounter(offset){
-    if (carouselType === true){
+    if (carouselType === false){
         counter = counter +3;
         (counter>=allPets.length)?counter=counter%allPets.length:counter;
     }
-    if (carouselType === false){
+    if (carouselType === true){
         counter = counter + offset
     }
 
@@ -147,4 +147,3 @@ burgerMenu.onclick = function(){
 
 }
 console.log(modalWindow.children[2].children[3].children[0].children[0].childNodes[0].childNodes[0])
-console.log('пропиши "carouselType = false" что бы получить НОРМАЛЬНУЮ карусель (появится возможность вернуться к предыдущим слайдам)')
